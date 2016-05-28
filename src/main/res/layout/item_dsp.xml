@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_width="@dimen/dsp_item_provider_size"
+        android:layout_height="@dimen/dsp_item_provider_size"
+        android:id="@+id/ivProviderLogo"
+        android:scaleType="centerInside"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:focusable="false"
+        android:contentDescription="@string/loading"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/ivProviderLogo"
+        android:layout_toRightOf="@+id/ivProviderLogo"
+        android:layout_toLeftOf="@+id/btnDelete"
+        android:layout_marginStart="@dimen/dsp_item_provider_margin"
+        android:layout_marginLeft="@dimen/dsp_item_provider_margin"
+        android:gravity="center_vertical"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProviderName"
+            style="@style/FontSubhead"
+            android:singleLine="true"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProviderAuthor"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDelete"
+        android:src="@drawable/ic_delete"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/dsp_item_provider_margin"
+        android:clickable="true"
+        android:focusable="false"
+        android:contentDescription="@string/remove"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnDown"
+        android:layout_toStartOf="@+id/btnDown"
+        style="@style/OmniMusic.Spec.BorderlessButton"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUp"
+        android:src="@drawable/ic_arrow_up"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dsp_item_provider_margin"
+        android:clickable="true"
+        android:focusable="false"
+        android:contentDescription="@string/raise"
+        android:layout_marginRight="@dimen/dsp_item_provider_margin"
+        style="@style/OmniMusic.Spec.BorderlessButton"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDown"
+        android:src="@drawable/ic_arrow_down"
+        android:scaleType="centerCrop"
+        android:layout_toStartOf="@+id/btnUp"
+        android:layout_toLeftOf="@+id/btnUp"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dsp_item_provider_margin"
+        android:clickable="true"
+        android:focusable="false"
+        android:contentDescription="@string/lower"
+        style="@style/OmniMusic.Spec.BorderlessButton"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>

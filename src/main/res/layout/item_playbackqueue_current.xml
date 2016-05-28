@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/playbackqueue_current_height"
+    app:cardCornerRadius="@dimen/card_radius"
+    android:layout_margin="@dimen/playbackqueue_current_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.fastbootmobile.encore.app.ui.AlbumArtImageView
+            android:id="@+id/ivAlbumArt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/playbackqueue_current_art_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivAlbumArt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/gradient_overlay_playbar_current"
+            android:id="@+id/linearLayout"
+            android:paddingLeft="@dimen/playbackqueue_current_metadata_padleft"
+            android:paddingStart="@dimen/playbackqueue_current_metadata_padleft"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="@dimen/playbackqueue_current_metadata_padtop"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    style="@style/FontTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/white_text"/>
+
+                <TextView
+                    android:id="@+id/tvArtist"
+                    style="@style/FontSubhead"
+                    android:textColor="@color/text_detail_emphasize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnOverflow"
+                android:src="@drawable/ic_more_vert_light"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/more"
+                android:padding="@dimen/playbackqueue_current_overflow_padding"/>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sbSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:max="0"
+            android:progress="0"
+            android:layout_below="@+id/ivAlbumArt"
+            android:layout_toLeftOf="@+id/tvTotalTime"
+            android:layout_toRightOf="@+id/tvCurrentTime"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:measureWithLargestChild="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="@dimen/playbackqueue_current_button_size"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnThumbsDown"
+                android:src="@drawable/ic_thumb_down_gray"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:contentDescription="@string/thumbs_up_description"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="@dimen/playbackqueue_current_button_size"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnShuffle"
+                android:src="@drawable/ic_shuffle_gray"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:contentDescription="@string/shuffle"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="@dimen/playbackqueue_current_button_size"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnPrevious"
+                android:clickable="true"
+                android:src="@drawable/ic_skip_previous"
+                android:contentDescription="@string/previous"
+                android:layout_marginLeft="@dimen/playbackqueue_current_button_margin"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:scaleType="centerInside"
+                android:padding="8dp" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabPlay"
+                android:layout_width="@dimen/fab_size_mini"
+                android:layout_height="@dimen/fab_size_mini"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                app:fab_size="mini"
+                app:fab_colorNormal="@color/primary"
+                app:fab_colorPressed="@color/primary_dark"
+                android:focusable="false" />
+
+            <ImageView
+                android:id="@+id/btnForward"
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:src="@drawable/ic_skip_next"
+                android:contentDescription="@string/forward"
+                android:layout_marginRight="@dimen/playbackqueue_current_button_margin"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:scaleType="centerInside"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="@dimen/playbackqueue_current_button_size"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnRepeat"
+                android:src="@drawable/ic_replay_gray"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:contentDescription="@string/repeat"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:padding="8dp" />
+
+            <ImageView
+                android:layout_width="@dimen/playbackqueue_current_button_size"
+                android:layout_height="@dimen/playbackqueue_current_button_size"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btnThumbs"
+                android:src="@drawable/ic_thumbs_up_gray"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:contentDescription="@string/thumbs_up_description"
+                style="@style/OmniMusic.Spec.BorderlessButton"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="-:--"
+            android:id="@+id/tvCurrentTime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_below="@+id/ivAlbumArt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="-:--"
+            android:id="@+id/tvTotalTime"
+            android:layout_below="@+id/ivAlbumArt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rvArtists"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/grid_padding"
+    android:paddingRight="@dimen/grid_padding"
+    android:paddingTop="@dimen/grid_padding"
+    android:paddingBottom="@dimen/playing_bar_height"
+    android:clipToPadding="false"
+    android:scrollbarStyle="outsideOverlay"
+    android:orientation="vertical"
+    android:scrollbars="vertical" />

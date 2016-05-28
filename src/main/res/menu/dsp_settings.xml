@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_download_effect"
+        android:icon="@drawable/ic_ab_cloud_download"
+        android:title="@string/download_effects"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_add_effect"
+        android:icon="@drawable/ic_ab_add"
+        android:title="@string/add_effect"
+        app:showAsAction="ifRoom"/>
+
+</menu>

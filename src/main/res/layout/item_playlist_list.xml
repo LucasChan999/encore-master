@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/playlist_item_height"
+             android:background="?android:attr/selectableItemBackground"
+             android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ivDragHandle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_drag_handle"
+            android:padding="@dimen/playlist_item_art_margin"
+            android:layout_gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <com.fastbootmobile.encore.app.ui.AlbumArtImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/ivCover"
+            android:adjustViewBounds="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/playlist_item_art_margin"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/ivCover"
+            android:layout_toLeftOf="@+id/ivDragHandle"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/playlist_item_art_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPlaylistName"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-medium"
+                fontPath="fonts/Roboto-Medium.ttf"
+                android:textSize="16sp"
+                android:paddingBottom="2dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/offline_indicator_size"
+                    android:layout_height="@dimen/offline_indicator_size"
+                    android:layout_marginRight="@dimen/playlist_item_art_margin"
+                    android:id="@+id/ivOfflineStatus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvPlaylistDesc"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

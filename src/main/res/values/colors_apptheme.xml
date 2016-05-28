@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+
+    <!-- Red 500 -->
+    <color name="primary">#F44336</color>
+    <color name="primary_translucent">#50F44336</color>
+
+    <!-- Red 700 -->
+    <color name="primary_dark">#B71C1C</color>
+
+    <!-- Deep Orange A400 -->
+    <color name="accent">#FF3D00</color>
+
+    <!-- Red 100 -->
+    <color name="primary_light">#FFCDD2</color>
+
+    <!-- Welcome -->
+    <color name="welcome_background">#dd342d</color>
+
+    <!-- Standard colors -->
+    <color name="apptheme_color">@color/primary</color>
+    <color name="apptheme_color_pressed">@color/primary_dark</color>
+    <color name="white">#ffffff</color>
+    <color name="separator">#dddddd</color>
+    <color name="default_fragment_background">@color/background_material_light</color>
+    <color name="selected_item_background">#DDDDDD</color>
+
+    <!-- Default lists/grids colors -->
+    <color name="default_album_art_background">#333333</color>
+
+    <color name="default_translucent_black_overlay">#BB333333</color>
+
+    <!-- Buttons -->
+    <!-- Grey 600 -->
+    <color name="grey">#757575</color>
+    <!-- Green 500 -->
+    <color name="green">#259b24</color>
+    <!-- Green 900 -->
+    <color name="green_dark">#0d5302</color>
+    <!-- Red 500 -->
+    <color name="red">#e51c23</color>
+    <!-- Red 900 -->
+    <color name="red_dark">#b0120a</color>
+    <!-- Blue Grey 500 -->
+    <color name="blue">#607d8b</color>
+    <!-- Blue Grey 900 -->
+    <color name="blue_dark">#263238</color>
+
+    <color name="snackbar_background">#ff323232</color>
+
+    <color name="my_songs_strip_indicator_color">#4D000000</color>
+    <color name="my_songs_strip_divider_color">#4DFFFFFF</color>
+
+    <color name="leanback_track_background_color">#ff384248</color>
+    <color name="leanback_track_row_separator_highlight_color">#6affffff</color>
+    <color name="leanback_track_main_text_color">#ffeeeeee</color>
+    <color name="leanback_track_secondary_text_color">#80eeeeee</color>
+	
+	<!-- Added to expose resources for Theme Chooser and general clean-up -->
+	<color name="card_background">#ccc</color>
+	<color name="circle_green">#8bc34a</color>
+	<color name="white80">#80ffffff</color>
+	<color name="white40">#40ffffff</color>
+	<color name="black80">#80000000</color>
+	<color name="white_text">#ffffffff</color>
+	<color name="primary_text">#8A000000</color>
+	<color name="secondary_text">#DD000000</color>
+	<color name="llButtons_bg">#aa333333</color>
+	<color name="progress_bg">#333333</color>
+	<color name="fab_bg">#f80</color>
+	<color name="outline_pressed">#AACC0000</color>
+	<color name="playbar_endColor">#00333333</color>
+	<color name="playbar_startColor">#dd333333</color>
+	<color name="divider_color">#20000000</color>
+	<color name="shadow_endColor">#00777777</color>
+	<color name="shadow_startColor">#aa777777</color>
+	<color name="notification_bg">@color/material_blue_grey_900</color>
+	<color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+	
+	
+	
+</resources>

@@ -1,0 +1,166 @@
+<resources>
+    <!-- General purpose -->
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="button_elevation">4dp</dimen>
+    <dimen name="button_press_elevation">8dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
+    <dimen name="shadow_height">2dp</dimen>
+
+    <dimen name="tile_text_padding">16dp</dimen>
+    <dimen name="tile_single_text_height">48dp</dimen>
+    <dimen name="tile_dual_text_height">68dp</dimen>
+
+    <dimen name="notif_action_button">42dp</dimen>
+
+    <dimen name="grid_padding">4dp</dimen>
+
+    <dimen name="translucent_toolbar_top_margin">24dp</dimen>
+    <dimen name="translucent_toolbarstatus_top_margin">80dp</dimen>
+
+    <dimen name="detail_source_logo_size">32dp</dimen>
+    <dimen name="detail_source_logo_margin">8dp</dimen>
+
+    <!-- Welcome screens -->
+    <dimen name="welcome_title_font">38sp</dimen>
+    <dimen name="welcome_title_margin">32dp</dimen>
+    <dimen name="welcome_body_font">16sp</dimen>
+    <dimen name="welcome_body_margin">32dp</dimen>
+    <dimen name="welcome_button_font">16sp</dimen>
+    <dimen name="welcome_button_margin">32dp</dimen>
+    <dimen name="welcome_button_margin_small">16dp</dimen>
+    <dimen name="welcome_list_margin">12dp</dimen>
+
+    <!-- General Entities Views -->
+    <dimen name="entview_head_padding_left">24dp</dimen>
+    <dimen name="entview_head_padding_right">40dp</dimen>
+    <dimen name="entview_head_padding_top">16dp</dimen>
+    <dimen name="entview_head_padding_bottom">16dp</dimen>
+    <dimen name="entview_head_fab_margin_right">16dp</dimen>
+    <dimen name="entview_head_fab_margin_bottom">24dp</dimen>
+
+    <dimen name="offline_indicator_size">16dp</dimen>
+
+    <!-- Artist views -->
+    <dimen name="artist_head_padding_bottom">64dp</dimen>
+    <dimen name="artist_head_source_margin_bottom">48dp</dimen>
+    <dimen name="artist_head_fab_margin_bottom">24dp</dimen>
+    <dimen name="artist_head_tabstrip_height">48dp</dimen>
+
+    <dimen name="artist_album_list_cover_size">56dp</dimen>
+    <dimen name="artist_album_list_item_margin">8dp</dimen>
+    <dimen name="artist_album_list_item_text_padding">72dp</dimen>
+    <dimen name="artist_album_list_item_play_size">48dp</dimen>
+    <dimen name="artist_album_list_item_duration_padding">8dp</dimen>
+
+    <dimen name="artist_similar_height">720dp</dimen>
+    <dimen name="artist_similar_loading_height">320dp</dimen>
+
+    <dimen name="artist_suggestion_card_height">64dp</dimen>
+    <dimen name="artist_suggestion_text_padding">8dp</dimen>
+    <dimen name="artist_suggestion_button_width">72dp</dimen>
+    <dimen name="artist_suggestion_button_margin">4dp</dimen>
+
+    <dimen name="artist_tracks_header_margin_top">16dp</dimen>
+
+    <!-- My songs -->
+    <dimen name="my_songs_strip_height">128dp</dimen>
+    <dimen name="my_songs_strip_indicator_height">4dp</dimen>
+    <dimen name="my_songs_strip_indicator_radius">2dp</dimen>
+
+    <!-- Playlists -->
+    <dimen name="playlist_view_item_height">72dp</dimen>
+    <dimen name="playlist_offline_button_width">128dp</dimen>
+    <dimen name="playlist_offline_button_height">48dp</dimen>
+    <dimen name="playlist_offline_button_text">18sp</dimen>
+    <dimen name="playlist_offline_button_margin">8dp</dimen>
+
+    <dimen name="playlist_item_art_margin">4dp</dimen>
+    <dimen name="playlist_item_height">64dp</dimen>
+
+    <dimen name="playlist_view_art_size">48dp</dimen>
+    <dimen name="playlist_view_art_margin">4dp</dimen>
+
+    <!-- Drive mode -->
+    <dimen name="drive_button_size">100dp</dimen>
+    <dimen name="nav_head_size">64dp</dimen>
+
+    <!-- Playing bar -->
+    <dimen name="playing_bar_fab_size">50dp</dimen>
+    <dimen name="playing_bar_height">64dp</dimen>
+    <dimen name="playing_bar_elevation">12dp</dimen>
+    <dimen name="playing_bar_margin_top">24dp</dimen>
+    <dimen name="playing_bar_margin_sides">12dp</dimen>
+    <dimen name="playing_bar_fab_margin">16dp</dimen>
+
+    <!-- Recognition -->
+    <dimen name="recognition_button_size">156dp</dimen>
+    <dimen name="recognition_art_size">120dp</dimen>
+
+    <!-- Songs lists -->
+    <dimen name="songs_list_hero_height">210dp</dimen>
+    <dimen name="songs_reel_play_margin">16dp</dimen>
+    <dimen name="songs_reel_title_size">16sp</dimen>
+
+    <!-- Automix -->
+    <dimen name="bucket_item_margin_left">16dp</dimen>
+    <dimen name="bucket_item_overflow_size">48dp</dimen>
+
+    <!-- DSP & Providers -->
+    <dimen name="dsp_item_provider_size">56dp</dimen>
+    <dimen name="dsp_item_provider_margin">8dp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_header_padding">8dp</dimen>
+
+    <!-- History -->
+    <dimen name="history_art_margin">16dp</dimen>
+    <dimen name="history_date_padding">4dp</dimen>
+
+    <!-- Listen now -->
+    <dimen name="listen_now_hero_height">172dp</dimen>
+    <dimen name="listen_now_card_padding">16dp</dimen>
+    <dimen name="card_text_secondline_padding_top">4dp</dimen>
+    <dimen name="listen_now_section_header_vert_padding">8dp</dimen>
+    <dimen name="listen_now_section_header_horz_padding">16dp</dimen>
+    <dimen name="listen_now_header_padding">8dp</dimen>
+    <dimen name="listen_now_item_card_vert_padding">8dp</dimen>
+    <dimen name="listen_now_item_card_horz_padding">8dp</dimen>
+    <dimen name="listen_now_item_card_hero_height">96dp</dimen>
+
+    <!-- nav drawer -->
+    <dimen name="nav_drawer_item_padding">16dp</dimen>
+
+    <!-- Playback queue -->
+    <dimen name="playbackqueue_current_height">480dp</dimen>
+    <dimen name="playbackqueue_current_margin">4dp</dimen>
+    <dimen name="playbackqueue_current_art_height">400dp</dimen>
+    <dimen name="playbackqueue_current_metadata_padleft">8dp</dimen>
+    <dimen name="playbackqueue_current_metadata_padtop">12dp</dimen>
+    <dimen name="playbackqueue_current_overflow_padding">4dp</dimen>
+    <dimen name="playbackqueue_current_button_size">42dp</dimen>
+    <dimen name="playbackqueue_current_button_margin">8dp</dimen>
+
+    <dimen name="playbackqueue_item_margin">16dp</dimen>
+
+    <!-- Offline bubbly -->
+    <dimen name="offline_bubble_margin_bottom">48dp</dimen>
+    <dimen name="offline_bubble_margin_top">16dp</dimen>
+    <dimen name="notification_expanded_art_size">128dp</dimen>
+
+    <!-- TV / Leanback UI -->
+    <dimen name="leanback_track_row_width">960dp</dimen>
+    <dimen name="leanback_track_row_contents_width">614dp</dimen>
+    <dimen name="leanback_track_row_horizontal_margin">132dp</dimen>
+    <dimen name="leanback_track_row_horizontal_padding">32dp</dimen>
+    <dimen name="leanback_track_row_height">48dp</dimen>
+    <dimen name="leanback_track_row_info_width">64dp</dimen>
+    <dimen name="leanback_track_text_size">18sp</dimen>
+    <dimen name="leanback_track_row_title_width">502dp</dimen>
+    <dimen name="leanback_track_row_info_width_with_padding">88dp</dimen>
+    <dimen name="leanback_track_row_icon_size">24dp</dimen>
+    <dimen name="recognition_card_height">112dp</dimen>
+</resources>

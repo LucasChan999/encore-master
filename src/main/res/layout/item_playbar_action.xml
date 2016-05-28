@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/playing_bar_height"
+    android:background="@drawable/playing_bar_item_background"
+    android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            fontPath="fonts/Roboto-Medium.ttf"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            style="@style/FontButton"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/playbackqueue_item_margin"
+            android:layout_marginEnd="@dimen/playbackqueue_item_margin"
+            android:textColor="@color/grey"/>
+
+</FrameLayout>

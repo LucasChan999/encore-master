@@ -1,0 +1,83 @@
+buildscript {
+    repositories {
+        jcenter() // or mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+android {
+    compileSdkVersion 'android-N'
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 28
+        versionName "1.0.5"
+        renderscriptTargetApi 18
+        multiDexEnabled false
+    }
+
+    buildTypes {
+        debug {
+
+        }
+        release {
+            // minifyEnabled = false
+        }
+    }
+
+    dexOptions {
+        // incremental true
+        preDexLibraries true
+    }
+
+    productFlavors {
+        production {
+            versionName defaultConfig.versionName + "-" + getDate()
+        }
+        dogfood {
+            versionName defaultConfig.versionName + "-dogfood-" + getDate()
+        }
+        dev_xplod {
+            versionName defaultConfig.versionName + "-dev-xplod-" + getDate()
+        }
+        tv {
+            versionName defaultConfig.versionName + "-tv-" + getDate()
+            minSdkVersion 17
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/libs'
+        jni.srcDirs = []
+    }
+}
+
+dependencies {
+    compile project(':providerlib')
+    compile files('src/main/libs/jEN.jar')
+    compile files('src/main/libs/json_simple-1.1.jar')
+    compile files('src/main/libs/calligraphy-1.1.0.jar')
+    compile files('src/main/libs/sentry-1.1.4.jar')
+    compile 'com.google.android.gms:play-services-cast:7.5.0'
+    compile 'com.android.support:support-v13:22.1.1'
+    compile 'com.android.support:mediarouter-v7:22.1.1'
+    compile 'com.android.support:cardview-v7:22.1.1'
+    compile 'com.android.support:palette-v7:22.1.1'
+    compile 'com.android.support:recyclerview-v7:22.1.1'
+    compile 'com.android.support:support-v4:22.1.1'
+    compile 'com.android.support:leanback-v17:22.1.1'
+    compile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3.1'
+}

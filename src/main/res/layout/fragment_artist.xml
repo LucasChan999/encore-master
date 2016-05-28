@@ -1,0 +1,100 @@
+<com.fastbootmobile.encore.app.ui.ParallaxScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:transitionGroup="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.fastbootmobile.encore.app.ArtistActivity.InnerFragment">
+
+        <com.fastbootmobile.encore.app.ui.TopCropImageView
+            android:id="@+id/ivHero"
+            android:transitionName="itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/title_activity_artist"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:transitionName="artistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/text_regular"
+            android:gravity="top|start"
+            android:paddingTop="@dimen/entview_head_padding_top"
+            android:paddingBottom="@dimen/artist_head_padding_bottom"
+            android:paddingRight="@dimen/entview_head_padding_right"
+            android:paddingEnd="@dimen/entview_head_padding_right"
+            android:paddingLeft="@dimen/entview_head_padding_left"
+            android:paddingStart="@dimen/entview_head_padding_left"
+            android:textColor="@color/white_text"
+            android:layout_below="@+id/ivHero"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+        <ImageView
+            android:id="@+id/ivSourceLogo"
+            android:layout_width="@dimen/detail_source_logo_size"
+            android:layout_height="@dimen/detail_source_logo_size"
+            android:layout_alignEnd="@+id/tvArtist"
+            android:layout_alignRight="@+id/tvArtist"
+            android:layout_alignTop="@+id/tvArtist"
+            android:layout_marginEnd="@dimen/detail_source_logo_margin"
+            android:layout_marginStart="@dimen/detail_source_logo_margin"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:layout_alignBottom="@+id/tvArtist" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPlay"
+            android:layout_width="@dimen/fab_size_normal"
+            android:layout_height="@dimen/fab_size_normal"
+
+            app:fab_size="normal"
+            app:fab_colorNormal="@color/primary"
+            app:fab_colorPressed="@color/primary_light"
+
+            android:layout_marginRight="@dimen/entview_head_fab_margin_right"
+            android:layout_marginEnd="@dimen/entview_head_fab_margin_right"
+            android:layout_above="@+id/pagerArtist"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="72dp" />
+
+        <com.fastbootmobile.encore.app.ui.WrapContentHeightViewPager
+            android:id="@+id/pagerArtist"
+            android:transitionGroup="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ivHero"
+            android:layout_alignLeft="@+id/ivHero"
+            android:layout_alignRight="@+id/ivHero"
+            android:layout_alignStart="@+id/ivHero"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvArtist"
+            android:layout_marginTop="-48dp">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pagerArtistStrip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/artist_head_tabstrip_height"
+                android:layout_gravity="top"
+                android:textAppearance="@style/OmniMusic.Spec.ViewPager"
+                android:gravity="center_vertical"
+                android:textColor="@color/white_text" />
+
+        </com.fastbootmobile.encore.app.ui.WrapContentHeightViewPager>
+
+    </RelativeLayout>
+</com.fastbootmobile.encore.app.ui.ParallaxScrollView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_group_item_height"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:background="?android:attr/selectableItemBackground">
+
+    <include
+        layout="@layout/divider"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"/>
+
+    <com.fastbootmobile.encore.app.ui.AlbumArtImageView
+        android:layout_width="@dimen/artist_album_list_cover_size"
+        android:layout_height="@dimen/artist_album_list_cover_size"
+        android:layout_marginTop="@dimen/artist_album_list_item_margin"
+        android:id="@+id/ivCover"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/ivPlayAlbum"
+        android:layout_toLeftOf="@+id/ivPlayAlbum"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingStart="@dimen/artist_album_list_item_text_padding"
+        android:paddingLeft="@dimen/artist_album_list_item_text_padding"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAlbumName"
+            android:layout_gravity="center_vertical"
+            style="?android:attr/textAppearanceMedium"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:textColor="@color/text_regular" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAlbumYear"
+            android:layout_gravity="center_vertical"
+            style="?android:attr/textAppearanceMedium"
+            android:alpha="0.6"
+            android:textSize="14sp"
+            android:textColor="@color/text_detail" />
+
+    </LinearLayout>
+
+    <com.fastbootmobile.encore.app.ui.SquareImageView
+        android:layout_width="@dimen/artist_album_list_item_play_size"
+        android:layout_height="@dimen/artist_album_list_item_play_size"
+        android:id="@+id/ivPlayAlbum"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

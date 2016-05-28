@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_album_art_background"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical">
+
+    <!--  -->
+    <com.fastbootmobile.encore.app.ui.AlbumArtImageView
+        android:id="@+id/ivCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:transitionName="itemImage"
+        android:contentDescription="@string/app_name"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/FontCardLine1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tile_single_text_height"
+        android:textColor="@color/white_text"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/tile_text_padding"
+        android:layout_marginRight="@dimen/tile_text_padding"
+        android:singleLine="true"
+        android:transitionName="artistName"
+        android:gravity="center_vertical|start" />
+
+</LinearLayout>

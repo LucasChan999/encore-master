@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SnackbarText">
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SnackbarText.Action">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="OmniMusic">
+    </style>
+
+    <!-- Styles based on Google Design Spec http://google.com/design/spec -->
+
+    <!-- Spec root -->
+    <style name="OmniMusic.Spec">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Spec: Components: Subheaders -->
+    <style name="OmniMusic.Spec.Subheader">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="OmniMusic.Spec.ViewPager">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="OmniMusic.Spec.BorderlessButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="OmniMusic.NavDrawerItem" parent="RobotoLightLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_regular</item>
+    </style>
+
+    <style name="OmniMusic.NavDrawerItem.Selected">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OmniMusic.NavDrawerAction" parent="RobotoLightLarge">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_regular</item>
+    </style>
+
+    <style name="OmniMusic.NavDrawerAction.Selected">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtEmptyQueue"
+        style="@style/FontTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/text_detail"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:text="@string/empty_playback_queue"
+        android:textStyle="italic"
+        android:visibility="visible"
+        android:drawableTop="@drawable/logo_none_playing"/>
+
+    <ListView
+        android:id="@+id/lvPlaybackQueue"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
